@@ -19,4 +19,3 @@ Simply edit the values of the information dictionary in config.py and execute ma
 - This bot does not support size selection
 - The place order function is initially commented out to prevent accidental purchace
 - The bot supports Canadian purchases only
-- 
