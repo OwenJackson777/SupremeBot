@@ -19,3 +19,4 @@ pip install selenium
 - This bot does not support size selection
 - The place order function is initially commented out to prevent accidental purchace
 - The bot supports Canadian purchases only
+- You will need to have the chrome driver in the same directory as main.py or provide the path to it
