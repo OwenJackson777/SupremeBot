@@ -35,9 +35,9 @@ def selectCanada():
     chrome.find_element_by_xpath('//*[@id="order_billing_country"]/option[2]').click()
 
 def selectDropDowns(info):
-    provinces = ['', '', 'AB', 'BC', 'MB', 'NB', 'NL', 'NT', 'NS', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT']
-    exp_month = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-    exp_year = [0, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031]
+    provinces = ('', '', 'AB', 'BC', 'MB', 'NB', 'NL', 'NT', 'NS', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT')
+    exp_month = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+    exp_year = (0, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031)
 
     province_index = provinces.index(info['province'])
     exp_month_index = exp_month.index(info['exp_month'])
