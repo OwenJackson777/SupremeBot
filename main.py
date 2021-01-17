@@ -5,15 +5,16 @@ from time import sleep
 chrome = webdriver.Chrome('./chromedriver')
 
 #Searching for link
-while True:
-    sleep(1.0)
-    try:
-        chrome.get(information['product_url'])
-    except:
-        print("Link not found.")
-    else:
-        break
-print("Link Found")
+def searchForLink(info):
+    while True:
+        sleep(1.0)
+        try:
+            chrome.get(info['product_url'])
+        except:
+            print("Link not found.")
+        else:
+            break
+    print("Link Found")
 
 def addToCart():
     chrome.find_element_by_xpath('//*[@id="add-remove-buttons"]/input').click() #add to cart
@@ -53,6 +54,7 @@ def placeOrder():
     chrome.find_element_by_xpath('//*[@id="pay"]/input').click()
 
 if __name__ == "__main__":
+    searchForLink(information)
     addToCart()
     fillOutFeilds(information)
     selectCanada()
